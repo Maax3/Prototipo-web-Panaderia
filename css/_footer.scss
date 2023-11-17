@@ -1,0 +1,75 @@
+@use "./grid.scss" as g;
+@use "./variables" as var;
+@use "./mixinns" as mix;
+
+@mixin pie($spacing,$fontSize) {
+    grid-area: pie;
+    display: flex;
+    justify-content: $spacing;
+    align-items: center;
+    height: fit-content;
+    background-color: var.$background;
+    border: 3px solid black;
+    border-top: none;
+
+    .btn {
+        @include mix.btn(var.$blue, 10px, 10px,$fontSize);
+        @include mix.hoverShadow(#fff,#fff,black);
+        transform: rotate(-15deg);
+        box-shadow: var.$shadow_img;
+        transition: 0.45s ease-in;
+    }
+
+    .pie_terms {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 620px;
+
+        a {
+            border-bottom: 3px solid black;
+            transition: 0.40s ease-in-out;
+        }
+
+        div:last-child {
+            a {
+                border-right: 3px solid black;
+                border-top-right-radius: 10px;
+            }
+        }
+
+        div:first-child {
+            a {
+                border-left: 3px solid black;
+                border-top-left-radius: 10px;
+            }
+        }
+
+        div {
+            :hover {
+                background-color: var.$blue;
+                border-bottom-color: red;
+            }
+        }
+    }
+
+
+    .contacto {
+        @include mix.hoverShadow(var.$blue,white,black);
+        padding: 6px;
+        margin: 10px 10px;
+        background-color: var.$blue;
+        border-radius: 15px;
+        font-weight: 1100px;
+        box-shadow: var.$shadow_contact;
+        border: 2px solid black;
+        transition: 0.35s ease-in;
+        font-size: $fontSize;
+    }
+
+    a {
+        font-size: $fontSize;
+        background-color: var.$orange;
+        padding: 5px;
+    }
+
+}
