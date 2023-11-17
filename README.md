@@ -2,7 +2,7 @@
 
 🔺[SITIO WEB](https://panaderia-amigas.000webhostapp.com/)🔻
 
-El proyecto se ha realizado a partir de un prototipado en [FIGMA](https://www.figma.com/file/o76Z0dYVVTW6988sPYC4WL/Proyecto-interfaces-web?type=design&mode=design&t=4nzdjNg4mq1BoKJo-1). Se ha utilizado ``Sass`` como tecnología principal y como temática una panadería.
+El proyecto se ha realizado a partir de un prototipado en [FIGMA](https://www.figma.com/file/o76Z0dYVVTW6988sPYC4WL/Proyecto-interfaces-web?type=design&mode=design&t=4nzdjNg4mq1BoKJo-1). Se ha utilizado ``Sass + Gulp`` y como temática una panadería.
 
 Como esqueleto se ha escogido el display ``GRID`` y cada parte se ha intentado hacer lo más modular posible mediante el uso de __mixins__ y __el paso por parámetros__. Además, las partes internas de la web como el ``header``,``main`` o ``footer`` se han maquetado con ``FLEX`` para controlar más fácil la disposición interna de los diferentes elementos.
 
